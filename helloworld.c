@@ -22,7 +22,7 @@
  *  into the SCGI protocol, forward it to port 8000, obtain a response, and forward the response back to
  *  whoever made the original request.
  *
- *  Copyright/license:  This code is released into the public domain.
+ *  Copyright/license:  MIT
  */
 
 #include "scgilib.h"
