@@ -13,7 +13,7 @@
  *                 to use the SCGI Library.
  *                 Use the library's functions to your heart's content.
  *
- *  Copyright/license:  This code is released into the public domain.
+ *  Copyright/license:  MIT
  */
 
 #include "scgilib.h"

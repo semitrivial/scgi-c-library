@@ -2,7 +2,7 @@
  *  SCGI C Library
  *  By Sam Alexander
  *
- *  Version 0.2, Last Updated:  4 Jun 2012
+ *  Version 0.2, Last Updated:  26 July 2015
  *
  *  On the web... http://www.xamuel.com/scgilib/
  *
@@ -12,7 +12,7 @@
  *                 Compile your project along with the accompanying scgilib.c file.
  *                 Use the library's functions to your heart's content.
  *
- *  Copyright/license:  This code is released into the public domain.
+ *  Copyright/license:  MIT.
  */
 
 #ifndef SCGILIB_H
