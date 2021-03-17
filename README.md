@@ -6,6 +6,10 @@ The library consists of just two files: scgilib.h and helloworld.c, which implem
     Listening for connections on multiple ports is as easy as calling the library initialization function multiple times.
     The library files are generously full of comments, I hope this will facilitate easily modifying the libraries as needed.
 
+# License
+
+MIT
+
 # Documentation
 
 There are three primary functions for interacting with the library: scgi_initialize for turning the server on, scgi_recv for obtaining connections, and scgi_write for sending the response. Connections are returned by scgi_recv in the form of an scgi_request structure (defined in scgilib.h) which contains fields for common things you might want to know about the request, such as what query string they sent, what their IP address is, etc.
