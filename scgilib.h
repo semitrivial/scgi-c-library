@@ -55,23 +55,22 @@ typedef struct SCGI_DESC scgi_desc;
 
 /*
  * How many bytes of memory to initially allocate for I/O buffers when a client connects.
- * (These will automatically be grown when/if the client sends a bigger amount of input or
+ * (These will automatically grow when/if the client sends a bigger amount of input or
  * SCGI C Library responds with a bigger amount of output)
  */
 #define SCGI_INITIAL_OUTBUF_SIZE 16384
 #define SCGI_INITIAL_INBUF_SIZE 16384
 
 /*
- * Upper limits on the number of bytes for I/O buffers.  If they send more data than this,
- * or compel us to send a bigger response, SCGI C Library assumes it is an attack and kills
- * the connection.
+ * Upper limits on the size of I/O buffers.  If they send more data than this,
+ * or compel us to send a bigger response, SCGI C Library kills the connection.
  */
 #define SCGI_MAX_INBUF_SIZE 131072
 #define SCGI_MAX_OUTBUF_SIZE 524288
 
 /*
  * If multiple clients simultaneously attempt to connect, how many connections should SCGI C Library
- * accept at once?  Any additional simultaneous connections beyond this limit will have to wait
+ * accept at once?  Additional simultaneous connections beyond this limit will have to wait
  * their turn.
  */
 #define SCGI_LISTEN_BACKLOG_PER_PORT 32
@@ -87,7 +86,7 @@ typedef enum
 
 /*
  * Different HTTP request types
- * (right now the SCGI C Library is mainly only built to handle GET and HEAD)
+ * (right now the SCGI C Library is mainly only built for GET and HEAD)
  */
 typedef enum
 {
@@ -142,7 +141,7 @@ do                                              \
 } while (0)
 
 /*
- * Data structure for a port -- SCGI C Library has support for listening on multiple ports simultaneously
+ * Data structure for a port -- SCGI C Library can listen on multiple ports simultaneously
  */
 struct SCGI_PORT
 {
@@ -167,7 +166,7 @@ struct SCGI_HEADER
 
 /*
  * Data structure for a successfully parsed SCGI request.
- * This is what any project using the SCGI C Library will primarily interact with.
+ * This is what projects using the SCGI C Library will primarily interact with.
  */
 struct SCGI_REQUEST
 {
