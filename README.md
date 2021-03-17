@@ -2,9 +2,9 @@ The library consists of just two files: scgilib.h and helloworld.c, which implem
 
 # Features
 
-    Asynchronous, non-blocking sockets. All the necessary socket programming is taken care of in scgilib.c. If one client connects to the library and slooooooowly starts sending a request, and while that request is still trickling in, a second client connects and sends a second request, the library will handle both requests simultaneously, without making the second client wait. This is accomplished without forking the server into multiple processes (thus allowing the server to store an enormous and dynamic database in RAM).
-    Listening for connections on multiple ports is as easy as calling the library initialization function multiple times.
-    The library files are generously full of comments, I hope this will facilitate easily modifying the libraries as needed.
+Asynchronous, non-blocking sockets. All the necessary socket programming is taken care of in scgilib.c. If one client connects to the library and slooooooowly starts sending a request, and while that request is still trickling in, a second client connects and sends a second request, the library will handle both requests simultaneously, without making the second client wait. This is accomplished without forking the server into multiple processes (thus allowing the server to store an enormous and dynamic database in RAM).
+Listening for connections on multiple ports is as easy as calling the library initialization function multiple times.
+The library files are generously full of comments, I hope this will facilitate easily modifying the libraries as needed.
 
 # License
 
