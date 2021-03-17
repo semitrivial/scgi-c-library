@@ -4,9 +4,6 @@
  *
  *  Version 0.2, Last Updated:  01 Mar 2014
  *
- *  On the web... http://www.xamuel.com/scgilib/
- *                http://www.xamuel.com/scgilib/helloworld/
- *
  *  helloworld.c - SCGI Library example file
  *                 Creates a server (on port 8000) to listen for SCGI and respond with Hello World!
  *
@@ -14,7 +11,7 @@
  *  port 8000 using the SCGI protocol.  How to do this varies from webserver to webserver.
  *  Of course, 8000 can be replaced with whatever port number you want.
  *
- *  For example, on the xamuel.com Apache server, first I installed the mod-scgi module, then I added
+ *  For example, on my Apache server, first I installed the mod-scgi module, then I added
  *  the following line in etc/apache2/apache2.conf :
  *    SCGIMount /scgilib/helloworld/ 127.0.0.1:8000
  *  Then I restarted Apache.

@@ -4,8 +4,6 @@
  *
  *  Version 0.2, Last Updated:  26 July 2015
  *
- *  On the web... http://www.xamuel.com/scgilib/
- *
  *  scgilib.h - SCGI C Library header file
  *
  *  Instructions:  #include this library file into whatever project you're working on.

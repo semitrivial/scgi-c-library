@@ -4,8 +4,6 @@
  *
  *  Version 0.2, Last Updated:  4 Jun 2012
  *
- *  On the web... http://www.xamuel.com/scgilib
- *
  *  scgilib.c - SCGI Library code file
  *
  *  Instructions:  Compile scgilib.c along with all your other code files.
